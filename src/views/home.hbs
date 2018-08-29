@@ -1,5 +1,9 @@
 <section class="main__container--limited-width">
   <h1 class="main__title">FACG5 Students</h1>
-  <p>Welcome to cohort 5 portfolios app</p>
+  {{#each  res}}
+  <a href="#"><img src='{{this.img}}'></a>
+  <h4>{{this.name}}</h4>
+  {{/each}}
+  
 
 </section>
