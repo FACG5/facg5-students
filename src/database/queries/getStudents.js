@@ -5,7 +5,7 @@ dbConnection.query("SELECT img, name FROM students", (err, res) => {
 if (err) {
 cb(err);
 } else {
-cb(null, res);
+cb(null, res.rows);
 }
 });
 };
