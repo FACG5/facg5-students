@@ -1,9 +1,24 @@
 <section class="main__container--limited-width">
-  <h1 class="main__title">FACG5 Students</h1>
+
+<div class="header">
+   <h1>FACG5 Students</h1>
+  <p>Welcome to cohort 5 portfolios app</p> `
+</div>
+ 
+  <div class="container">
   {{#each  res}}
-  <a href="#"><img src='{{this.img}}'></a>
-  <h4>{{this.name}}</h4>
+    <div class="stdiv">
+  <div class="stdpic">
+    <img  src='{{this.img}}'>
+  </div>
+    <h4 class="stdname">{{this.name}}</h4>
+
+  <button class="stdbtn"> Show Pojects </button>
+  </div>
+
   {{/each}}
-  
+</div>
+
+
 
 </section>

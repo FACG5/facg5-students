@@ -1,0 +1,27 @@
+
+<section >
+  <div class="header">
+
+    <h1>PORTFOLIO PAGE</h1>
+  </div>
+
+</section>
+<div class="container">
+{{#each response}}
+<div class="stdiv">
+  <div class="stdpic">
+<img src="{{this.img}}"/>
+</div>
+<p class="paregraph">Student's Name: <span>{{this.name}}</span></p>
+<p class="paregraph">Student's Age: <span>{{this.age}}</span></p>
+<p class="paregraph">Student's Cohort: <span>{{this.cohort}}</span> </p>
+<p class="paregraph" >Student's Gender: <span>{{this.gender}}</span></p>
+<div class="projects">
+<p class="paregraph">Projects: <span>{{this.name_project}}</span></p>
+<p class="paregraph">Link: <span><a href="{{this.url}}">click here</a></span></p>
+<p class="paregraph">Description: <span>{{this.description}}</span></p>
+</div>
+</div>
+  {{/each}}
+  </div>
+</section>
