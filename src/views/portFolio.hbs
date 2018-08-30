@@ -1,48 +1,30 @@
-<section>
-  <h1>PORTFOLIO PAGE</h1>
+<<<<<<< HEAD
+
+<section >
+  <div class="header">
+
+    <h1>PORTFOLIO PAGE</h1>
+  </div>
 
 </section>
-
+<div class="container">
 {{#each response}}
-
-<table style="width:100%">
-  <tr>
-    <td>Student's Image</td>
-    <td>
-      <img src="{{this.img}}" />
-    </td>
-  </tr>
-  <tr>
-    <td>Student's Name</td>
-    <td>{{this.name}}</td>
-  </tr>
-  <tr>
-    <td>Student's Age</td>
-    <td>{{this.age}}</td>
-  </tr>
-  <tr>
-    <td>Student's Cohort</td>
-    <td>{{this.cohort}}</td>
-  </tr>
-  <tr>
-    <td>Student's Gender</td>
-    <td>{{this.gender}}</td>
-  </tr>
-  <tr>
-    <td>Projects</td>
-    <td>{{this.name_project}}</td>
-  </tr>
-  <tr>
-    <td>Link</td>
-    <td>
-      <a href="{{this.url}}">Clickhere</a>
-    </td>
-  </tr>
-  <tr>
-    <td>Description</td>
-    <td>{{this.description}}</td>
-  </tr>
-</table>
-
-{{/each}}
+<div class="stdiv">
+  <div class="stdpic">
+<img src="{{this.img}}"/>
+</div>
+<p class="paregraph">Student's Name: <span>{{this.name}}</span></p>
+<p class="paregraph">Student's Age: <span>{{this.age}}</span></p>
+<p class="paregraph">Student's Cohort: <span>{{this.cohort}}</span> </p>
+<p class="paregraph" >Student's Gender: <span>{{this.gender}}</span></p>
+<div class="projects">
+<p class="paregraph">Projects: <span>{{this.name_project}}</span></p>
+<p class="paregraph">Link: <span><a href="{{this.url}}">click here</a></span></p>
+<p class="paregraph">Description: <span>{{this.description}}</span></p>
+</div>
+</div>
+  {{/each}}
+  </div>
 </section>
+
+

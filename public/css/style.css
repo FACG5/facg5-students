@@ -1,3 +1,120 @@
+
+
+body{
+  margin: 0 auto;
+  padding: 0;
+  background: url("../images/js.jpg");
+  background-repeat: no-repeat;
+background-size: cover;  
+}
+
+
+
+
+/* home page */
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 1000px;
+  height: 150px;
+  background: rgb(47, 66, 86);
+  /* background: rgba(147, 171, 193, 0.9); */
+  margin: 20px auto;
+  border-radius: 10px;
+  border: 2px groove azure;
+  font-family: 'Chewy', cursive;
+  color:white;
+
+}
+.header h1{
+  font-size:50px;
+}
+
+.header p{
+  font-size: 20px;
+  font-family: 'Pridi', serif;
+}
+
+
+.paregraph{
+  font-size: 20px;
+  font-family: 'Pridi', serif;
+  color:white;
+}
+span{
+  color:wheat;
+}
+a{
+  text-decoration: none;
+  color:brown;   
+  
+
+}
+
+
+
+.container {
+        width: 1000px;
+        margin: auto;
+        border-radius: 10px;
+        /* background:rgba(147, 171, 193, 0.9); */
+        background: rgb(47, 66, 86);
+        border: 2px groove azure;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .stdiv {
+        width: 19%;
+        height: 250px;
+        display: inline-block;
+        margin: 10px;
+        border-radius: 50%;
+        text-align: center;
+
+    }
+
+    .stdpic {
+        border: 1px solid white;
+        width: 90%;
+        height: 68%;
+        margin: auto;
+        border-radius: 100px;
+
+    }
+
+    .stdiv button {
+        width: 90%;
+        color: azure;
+        text-align: center;
+        margin: 10px auto;
+        height: 15%;
+        background-color:#1a2147;
+        border: 2px groove rgb(61, 61, 61);
+    }
+
+    .stdname {
+        display: block;
+        text-align: center;
+        margin: 5px auto;
+        /* text-shadow: .5px 1px 1px white; */
+        text-shadow: 2px 2px 2px #050505;
+        font-family: 'Patua One', cursive;
+        font-size: 18px;
+        color: white;
+    }
+
+    .stdpic img {
+        max-width: 100%;
+        max-height: 100%;
+        border-radius: 100px;
+    }
+
+
+
+/* start error page style */
 .error {
   display: flex;
   justify-content: center;
@@ -15,3 +132,27 @@
 .error__msg {
   color: #999;
 }
+
+/* end error page style */
+
+/* start portfolio page style*/
+/* .portfolioHead{
+  display: flex;
+  justify-content: center;
+  background-color:lightblue;
+  padding-top: 0;
+
+} */
+
+
+
+
+h1{
+  font-size: 2em;
+  display: flex;
+  font-family: fantasy;
+  padding-top: 5px;
+}
+
+
+/* end portfolio page style  */

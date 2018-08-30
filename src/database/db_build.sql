@@ -37,7 +37,7 @@ insert into students (username, name, age, gender,img, cohort, password) values
 ('malhanafi','Mohannad Al-Hanafi',22,'Male','https://avatars2.githubusercontent.com/u/30985258?s=400&v=4','FACG5','$2a$10$uL3LFmGIlVhuNeF1LEMpReAsxDdNxwYsTSnbHRTAhvo3aJNzlhK4u'),
 ('oshamla','Othman Shamla',22,'Male','https://avatars2.githubusercontent.com/u/16326221?s=400&v=4','FACG5','$2a$10$uL3LFmGIlVhuNeF1LEMpReAsxDdNxwYsTSnbHRTAhvo3aJNzlhK4u'),
 ('labdaljawwad','lubna abd aljawwad',22,'Female','https://avatars1.githubusercontent.com/u/26024284?s=460&v=4','FACG5','$2a$10$uL3LFmGIlVhuNeF1LEMpReAsxDdNxwYsTSnbHRTAhvo3aJNzlhK4u'),
-('aabdallah','ahmad abdallah',22,'Male','https://dyn.web.whatsapp.com/pp?e=https%3A%2F%2Fpps.whatsapp.net%2Fv%2Ft61.11540-24%2F33555476_1740215192724066_4300609521522311168_n.jpg%3Foe%3D5B8AE5A4%26oh%3Df39c11f680b877a3c7403869edbca3d2&t=l&u=972599089478%40c.us&i=1528438403','FACG5','$2a$10$uL3LFmGIlVhuNeF1LEMpReAsxDdNxwYsTSnbHRTAhvo3aJNzlhK4u'),
+('aabdallah','ahmad abdallah',22,'Male','http://www14.0zz0.com/2018/08/30/11/817005894.jpeg','FACG5','$2a$10$uL3LFmGIlVhuNeF1LEMpReAsxDdNxwYsTSnbHRTAhvo3aJNzlhK4u'),
 ('aahmed','Ali Haj Ahmed',29,'Male','https://avatars0.githubusercontent.com/u/36124895?s=460&v=4','FACG5','$2a$10$uL3LFmGIlVhuNeF1LEMpReAsxDdNxwYsTSnbHRTAhvo3aJNzlhK4u');
 
 
