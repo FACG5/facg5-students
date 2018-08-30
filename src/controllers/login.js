@@ -17,17 +17,16 @@ exports.post = (request, response) => {
       if (res === false)
         return response.send(JSON.stringify({ err: "Wrong Password !" }));
       createCookie(dbResult[0].id, (err, token) => {
-        if (err) return response.send(JSON.stringify({ err:"ssds" }));
+        if (err) return response.send(JSON.stringify({ err: "ssds" }));
         console.log(token);
-        
+
         response.setHeader(
           "Set-Cookie",
           `data=${token};httpOnly;Max-Age=90000000`
         );
 
-        return response.send(JSON.stringify({ err:null,success:"Welcome" }));
-        // return response.render('home')
-            });
+        return response.send(JSON.stringify({ err: null, success: "Welcome" }));
+      });
     });
   });
 };

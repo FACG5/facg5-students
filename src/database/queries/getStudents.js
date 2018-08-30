@@ -1,7 +1,7 @@
 const dbConnection = require("../db_connection");
 
 const getSudents = cb => {
-  dbConnection.query("SELECT img, name FROM students", (err, res) => {
+  dbConnection.query("SELECT * FROM students", (err, res) => {
     if (err) {
       cb(err);
     } else {

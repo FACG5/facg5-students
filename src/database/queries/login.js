@@ -4,7 +4,7 @@ const loginQuery = (username, cb) => {
   console.log(username);
 
   const sql = {
-    text: "SELECT * FROM students WHERE name = $1 ",
+    text: "SELECT * FROM students WHERE username = $1 ",
     values: [username]
   };
   dbConnection.query(sql, (err, res) => {

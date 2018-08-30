@@ -40,13 +40,7 @@ loginButton.addEventListener("click", e => {
       username: username.value,
       password: password.value
     };
-    //   request("POST", "/login", JSON.stringify(userData), (err, res) => {
-    //     if (err) return swal(err, "", "error");
-    // swal("Welcome Back ", "" , "success").then(value=>{
-    //   window.location = "/";
 
-    // })
-    //   });
     fetch("/login", {
       method: "POST",
       headers: { "content-type": "application/json" },
@@ -55,7 +49,7 @@ loginButton.addEventListener("click", e => {
     })
     .then(result=>result.json())
       .then(result => {        
-        if(result.err) return console.log(result.err);
+        if(result.err) return  swal(result.err, " ", "error");
         else window.location='/'   
       })
 

@@ -1,0 +1,48 @@
+<section>
+  <h1>PORTFOLIO PAGE</h1>
+
+</section>
+
+{{#each response}}
+
+<table style="width:100%">
+  <tr>
+    <td>Student's Image</td>
+    <td>
+      <img src="{{this.img}}" />
+    </td>
+  </tr>
+  <tr>
+    <td>Student's Name</td>
+    <td>{{this.name}}</td>
+  </tr>
+  <tr>
+    <td>Student's Age</td>
+    <td>{{this.age}}</td>
+  </tr>
+  <tr>
+    <td>Student's Cohort</td>
+    <td>{{this.cohort}}</td>
+  </tr>
+  <tr>
+    <td>Student's Gender</td>
+    <td>{{this.gender}}</td>
+  </tr>
+  <tr>
+    <td>Projects</td>
+    <td>{{this.name_project}}</td>
+  </tr>
+  <tr>
+    <td>Link</td>
+    <td>
+      <a href="{{this.url}}">Clickhere</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Description</td>
+    <td>{{this.description}}</td>
+  </tr>
+</table>
+
+{{/each}}
+</section>
