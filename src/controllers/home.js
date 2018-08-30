@@ -1,3 +1,6 @@
+
+
+
 const getStudentQuery = require("../database/queries/getStudents");
 
 exports.get = (request, response) => {
@@ -6,4 +9,5 @@ exports.get = (request, response) => {
 
     response.render("home", { res });
   });
+
 };
