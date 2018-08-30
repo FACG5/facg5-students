@@ -3,15 +3,18 @@
   {{>htmlHead}}
 <body>
 
-  <!-- {{> header}} -->
+
 
   <main class="main">
   {{{body}}}
   </main>
 
-  <!-- {{> footer}} -->
 
-  <script src="/js/main.js"></script>
+    <script src="/fetch.js"></script>
+  {{#if insert}}
+    <script src="/{{insert}}.js"></script>
+{{/if}}
+
 
 </body>
 </html>
