@@ -7,6 +7,7 @@ const exphbs = require('express-handlebars');
 
 const bodyParser = require("body-parser")
 
+
 const controllers = require('./controllers/index');
 // import helpers
 // const helpers = require('./views/helpers/index');
@@ -15,8 +16,10 @@ const app = express();
 
 // set up view engine
 
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:false}))
+
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');

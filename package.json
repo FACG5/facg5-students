@@ -35,12 +35,12 @@
     "cookie": "^0.3.1",
     "cookie-parser": "^1.4.3",
     "cookie-session": "^2.0.0-beta.3",
-    "env2": "^2.2.0",
+    "env2": "^2.2.2",
     "express": "^4.16.3",
     "express-fileupload": "^0.4.0",
     "express-handlebars": "^3.0.0",
     "jsonwebtoken": "^8.2.1",
-    "pg": "^7.4.1",
+    "pg": "^7.4.3",
     "serve-favicon": "^2.5.0"
   }
 }
