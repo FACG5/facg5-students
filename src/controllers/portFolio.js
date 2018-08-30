@@ -1,12 +1,20 @@
 const getPortFolio = require('../database/queries/getPortFolio');
+const error = require('./error');
 
-exports.get = (req, res) => {
+exports.get = (req, res,next) => {
+  try{
+
     const { id } = req.params;
-    getPortFolio(id, (err, response) => {
-      if (err) {
-        res.status(404).render('error', { err });
+    getPortFolio(id, (err, response) => {    
+
+      if (response.length==0) {
+       res.send('Sorry THis Client Not Exist!!')
+        return
       }
-     // console.log('data', data);
-      res.render('portFolio', { response });
+      res.render('portFolio', { response ,css:"style"});
     });
+  }catch(err){
+
+    next('EEEEEEE' ,err)
+  }
   };

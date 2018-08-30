@@ -3,8 +3,9 @@
 
   <p>Welcome to cohort 5 portfolios app</p>
   {{#each  res}}
-  <a href="#"><img src='{{this.img}}'></a>
-  <h4>{{this.name}}</h4>
+  <p>{{this}}</p>
+<img src='{{this.img}}'>
+  <a href="/portFolio/{{this.id}}"> <h4>{{this.name}}</h4></a>
   {{/each}}
   
 

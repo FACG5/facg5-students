@@ -8,11 +8,10 @@
   <main class="main">
   {{{body}}}
   </main>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
-
-    <script src="/fetch.js"></script>
-  {{#if insert}}
-    <script src="/{{insert}}.js"></script>
+  {{#if jsFile}}
+    <script src="/js/{{jsFile}}.js"></script>
 {{/if}}
 
 
