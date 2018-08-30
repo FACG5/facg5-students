@@ -18,7 +18,6 @@ exports.post = (request, response) => {
         return response.send(JSON.stringify({ err: "Wrong Password !" }));
       createCookie(dbResult[0].id, (err, token) => {
         if (err) return response.send(JSON.stringify({ err: "ssds" }));
-        console.log(token);
 
         response.setHeader(
           "Set-Cookie",

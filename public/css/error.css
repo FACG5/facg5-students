@@ -1,0 +1,18 @@
+.error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .error__desc {
+    text-align: center;
+  
+    font-size: 3em;
+  
+  }
+  
+  .error__msg {
+    color: #999;
+  }
+  

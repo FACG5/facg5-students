@@ -5,7 +5,7 @@ exports.notFound = (req, res) => {
     layout: "error",
     statusCode: 404,
     errorMessage: "Page not found",
-    css: "style"
+    css: "error"
   });
 };
 

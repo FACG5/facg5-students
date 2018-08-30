@@ -18,7 +18,7 @@ background-size: cover;
   align-items: center;
   flex-direction: column;
   width: 1000px;
-  height: 150px;
+  height: 200px;
   background: rgb(47, 66, 86);
   /* background: rgba(147, 171, 193, 0.9); */
   margin: 20px auto;
@@ -105,7 +105,20 @@ a{
         font-size: 18px;
         color: white;
     }
+.logoutButton,.addButton{
 
+  width: 10%;
+  font-weight: bold;
+
+  border: none;
+  border-radius: 3%;
+  margin: 20px;
+transition-duration: 0.3s;
+}
+.logoutButton:hover,.addButton:hover{
+  background: #919191;
+  /* color: aliceblue; */
+}
     .stdpic img {
         max-width: 100%;
         max-height: 100%;
@@ -113,36 +126,6 @@ a{
     }
 
 
-
-/* start error page style */
-.error {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.error__desc {
-  text-align: center;
-
-  font-size: 3em;
-
-}
-
-.error__msg {
-  color: #999;
-}
-
-/* end error page style */
-
-/* start portfolio page style*/
-/* .portfolioHead{
-  display: flex;
-  justify-content: center;
-  background-color:lightblue;
-  padding-top: 0;
-
-} */
 
 
 
