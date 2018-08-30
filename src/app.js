@@ -11,7 +11,10 @@ const controllers = require('./controllers/index');
 
 const app = express();
 
-// set up view engine
+app.use((request,response,next)=>{
+  request.token={}
+  next();
+})
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:false}));
 app.set('views', path.join(__dirname, 'views'));

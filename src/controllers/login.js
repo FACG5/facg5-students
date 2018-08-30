@@ -23,7 +23,7 @@ exports.post = (request, response) => {
           "Set-Cookie",
           `data=${token};httpOnly;Max-Age=90000000`
         );
-
+      
         return response.send(JSON.stringify({ err: null, success: "Welcome" }));
       });
     });

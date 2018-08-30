@@ -1,9 +1,15 @@
 <section class="main__container--limited-width">
+  {{#if name}}
                 <button id="logoutButton" class="logoutButton">log Out</button>
+  {{else}}
+                <a href="/login"><button id="logoutButton" class="logoutButton">log in</button></a>
+{{/if}}
 
   <div class="header">
     <h1>FACG5 Students</h1>
-    <p>Welcome to cohort 5 portfolios app</p> `
+    <p> cohort 5 portfolios app</p> `
+        <p>Welcome {{name}}</p> `
+
 
   </div>
 
