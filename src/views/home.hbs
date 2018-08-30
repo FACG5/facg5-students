@@ -1,23 +1,28 @@
 <section class="main__container--limited-width">
+                <button id="logoutButton" class="logoutButton">log Out</button>
 
-<div class="header">
-   <h1>FACG5 Students</h1>
-  <p>Welcome to cohort 5 portfolios app</p> `
-</div>
- 
+  <div class="header">
+    <h1>FACG5 Students</h1>
+    <p>Welcome to cohort 5 portfolios app</p> `
+
+  </div>
+
   <div class="container">
-  {{#each  res}}
+
+    {{#each res}}
     <div class="stdiv">
-  <div class="stdpic">
-    <img  src='{{this.img}}'>
-  </div>
-    <h4 class="stdname">{{this.name}}</h4>
+      <div class="stdpic">
+        <img src='{{this.img}}'>
+      </div>
+      <h4 class="stdname">{{this.name}}</h4>
 
-  <button class="stdbtn"> Show Pojects </button>
-  </div>
+      <a href="/portfolio/{{this.id}}">
+        <button class="stdbtn"> Show Pojects </button>
+      </a>
+    </div>
 
-  {{/each}}
-</div>
+    {{/each}}
+  </div>
 
 
 

@@ -4,6 +4,6 @@ exports.get = (request, response) => {
   getStudentQuery((err, res) => {
     if (err) return response.render("error");
 
-    response.render("home", { res, css: "style" });
+    response.render("home", { res, css: "style",jsFile:"home" });
   });
 };
